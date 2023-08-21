@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "0.1.0"
+name = "electricity_demand_fc"
+description = ""
+authors = [
+    {name = "Silvan Murre", email = "silvan.murre@gmail.com"}
+]
+requires-python = ">=3.8"
+dependencies = [
+    "python-dotenv",
+    "entsoe-py",
+    "herbie-data",
+    "cartopy",
+    "cfgrib",
+    "geopandas"
+]
+
+[project.optional-dependencies]
+dev = [
+    "electricity_demand_fc[test]",
+    "ruff",
+    "black",
+    "pre-commit"
+]
+test = [
+    "pytest",
+]
+examples = [
+    "ipykernel"
+]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
