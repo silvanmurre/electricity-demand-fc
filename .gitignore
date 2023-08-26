@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files #
+#########################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging #
+############################
+*.egg-info/
+
+# Dotenv Files #
+################
+.env
+
+# Editor temporary/working/backup files #
+#########################################
+.vscode
+.idea
+
+# EnAppSys files #
+##################
+.enappsys_cache/
+
+# OS generated files #
+######################
+.DS_Store*
+
+# Virtual Environments
+#########################################
+.env/
+.ENV/
+.venv/
+.VENV/
+env/
+ENV/
+venv/
+VENV/
+
+
+data/
+models/

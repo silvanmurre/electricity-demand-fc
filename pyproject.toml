@@ -16,7 +16,14 @@ dependencies = [
     "herbie-data",
     "cartopy",
     "cfgrib",
-    "geopandas"
+    "geopandas",
+    "xgboost",
+    "scikit-learn",
+    "mlflow",
+    "boto3",
+    "click",
+    "croniter",
+    "prefect"
 ]
 
 [project.optional-dependencies]
@@ -24,7 +31,8 @@ dev = [
     "electricity_demand_fc[test]",
     "ruff",
     "black",
-    "pre-commit"
+    "pre-commit",
+    "coverage"
 ]
 test = [
     "pytest",
@@ -33,6 +41,14 @@ examples = [
     "ipykernel"
 ]
 
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+[tool.ruff]
+ignore = [
+    "E501",  # line too long, handled by black
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
