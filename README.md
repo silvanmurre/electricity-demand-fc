@@ -46,13 +46,13 @@ pre-commit run --all-files
 
 ## MLFlow Server
 
-You can access the MLFlow UI [here](http://ec2-3-75-231-58.eu-central-1.compute.amazonaws.com:5000/)
+You can access the MLFlow UI [here](http://ec2-3-71-52-61.eu-central-1.compute.amazonaws.com:5000/)
 
 To set it up on AWS, I followed the steps in [MLOPS Zoomcamp 2.6 - Scenario 3](https://youtu.be/1ykg4YmbFVA?feature=shared&t=1165)
 
 ## Prefect Server
 
-You can access the Prefect Server [here](http://ec2-3-75-231-58.eu-central-1.compute.amazonaws.com:4200/)
+You can access the Prefect Server [here](ec2-3-71-52-61.eu-central-1.compute.amazonaws.com:4200/)
 
 Steps I took to set it up on EC2:
 
